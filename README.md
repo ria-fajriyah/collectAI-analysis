@@ -1,6 +1,6 @@
 # CollectAI — AI Agent Initiative for Multifinance Collection
 
-## 📌 Ringkasan
+## 📌 Summary
 
 **CollectAI** adalah inisiatif AI Agent yang dirancang untuk mengoptimalkan proses *collection* (penagihan) pada perusahaan multifinance melalui *behavioural intelligence*, *predictive recovery scoring*, dan rekomendasi *Next Best Action (NBA)* bagi field collector maupun supervisor.
 
@@ -10,7 +10,7 @@ Proyek ini merepresentasikan hasil kerja **business & systems analysis**, mencak
 - Desain solusi sistem (module navigation flow, wireframe/mockup UI)
 - Dokumentasi pitch/initiative untuk stakeholder (COI Season 2 – Spark Phase)
 
-## 🎯 Latar Belakang Masalah
+## 🎯 Problem Background Analysis
 
 Proses collection di multifinance konvensional menghadapi beberapa tantangan:
 - Biaya collection tinggi (15–25% dari OPEX)
@@ -18,7 +18,7 @@ Proses collection di multifinance konvensional menghadapi beberapa tantangan:
 - Data historis LKP (Lembar Kerja Penugasan), aktivitas collection, dan hasil kunjungan harian belum dimanfaatkan secara optimal
 - Treatment/penanganan nasabah masih bersifat *one-size-fits-all*, berisiko terhadap kepatuhan regulasi (POJK No. 22/POJK.04/2023)
 
-## 💡 Solusi yang Diusulkan
+## 💡 Proposed Solution
 
 CollectAI menganalisis histori LKP, pola pembayaran, dan outcome collection untuk:
 1. **Mengklasifikasikan nasabah** ke dalam segmen risiko: *Self-Cure, Can Pay, Cannot Pay, Won't Pay*
@@ -28,7 +28,7 @@ CollectAI menganalisis histori LKP, pola pembayaran, dan outcome collection untu
 
 Sistem diposisikan sebagai **Decision Support System** yang memberi insight kepada collector — bukan menggantikan proses Core Collection yang sudah berjalan.
 
-## 🧩 Cakupan Dokumen Analisis
+## 🧩 Document Analysis
 
 | Dokumen | Deskripsi |
 |---|---|
@@ -37,7 +37,7 @@ Sistem diposisikan sebagai **Decision Support System** yang memberi insight kepa
 | [`process-flow/module-navigation-flow.png`](process-flow/module-navigation-flow.png) | Peta navigasi modul sistem: Dashboard, Customer, Contract, Restructuring Approval, AI Intelligence (Collector vs Supervisor workspace) |
 | [`screenshots/`](screenshots) | Mockup UI aplikasi hasil desain: Dashboard, Customer List, Customer Detail (AI Reasoning), Contract List, Restructuring Approval, AI Intelligence Config |
 
-## 🖥️ Modul Utama Aplikasi
+## 🖥️ Main Module
 
 - **Dashboard** — Consolidated view: total outstanding, active delinquent accounts, PTP keep rate, distribusi risk segment, DPD bucket vs PTP status
 - **Customer** — Daftar nasabah dengan behavioral grade, B-list status, priority, dan filter (Critical Risk, Broken PTP, High Billing Amount)
@@ -46,7 +46,7 @@ Sistem diposisikan sebagai **Decision Support System** yang memberi insight kepa
 - **Restructuring Approval** — Antrian persetujuan supervisor untuk penawaran restrukturisasi (refinance) hasil rekomendasi AI
 - **AI Intelligence Config** — Konfigurasi bobot scoring model (payment rate, PTP reliability, interaction, delay score) dan monitoring model health
 
-## ⚙️ Logika Bisnis Inti (Business Rules)
+## ⚙️ Business Rules
 
 Segmentasi risiko nasabah ditentukan dari kombinasi *recovery score* dan indikator perilaku:
 
@@ -57,7 +57,7 @@ Segmentasi risiko nasabah ditentukan dari kombinasi *recovery score* dan indikat
 
 Priority level ditentukan dari matriks *risk segment × total outstanding*. Untuk kasus yang membutuhkan restrukturisasi, sistem membedakan jalur **Auto** (tampil langsung ke nasabah) vs **Manual** (perlu approval supervisor).
 
-## 🗺️ Roadmap Pengembangan
+## 🗺️ Roadmap Development
 
 1. **Phase 1 – MVP Launch**: LKP predictive scoring & treatment recommendation, integrasi core system multifinance
 2. **Phase 2 – Scale & Optimization**: treatment effectiveness analytics, adaptive learning dari historical outcome
@@ -68,6 +68,3 @@ Priority level ditentukan dari matriks *risk segment × total outstanding*. Untu
 - Diagram proses & flow: draw.io / Mermaid
 - Dokumentasi inisiatif & pitch: PowerPoint
 - Pendekatan analisis: problem-opportunity-solution framing, business process modeling (swimlane), rule-based decision table
-
----
-*Dokumen ini merupakan bagian dari portfolio Systems/Business Analysis — CollectAI (COI Season 2, Spark Phase).*
