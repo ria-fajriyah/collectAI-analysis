@@ -65,6 +65,6 @@ Priority level ditentukan dari matriks *risk segment × total outstanding*. Untu
 
 ## 🛠️ Tools & Metodologi
 
-- Diagram proses & flow: draw.io / Mermaid
+- Diagram proses & flow: draw.io
 - Dokumentasi inisiatif & pitch: PowerPoint
 - Pendekatan analisis: problem-opportunity-solution framing, business process modeling (swimlane), rule-based decision table
